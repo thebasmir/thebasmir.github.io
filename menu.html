@@ -1,0 +1,48 @@
+<html>
+<style>
+    body {
+     background: #333; /* Цвет фона */
+     color: #fc0; /* Цвет текста */
+    }
+   </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasty Food</title>
+    <link rel="shortcut icon" href="icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="catalog" id="catalog">
+            
+        <h2 class="title">МЕНЮ</h2>
+        <ul class="catalog__tabs">
+            <li class="catalog__tab catalog__tab_active" data-category="salads"><a href="#"><div>Салаты</div></a></li>
+            <li class="catalog__tab" data-category="snacks"><a href="#"><div>Закуски</div></a></li>
+            <li class="catalog__tab" data-category="second"><a href="#"><div>Вторые блюда</div></a></li>
+        </ul>
+
+        <div class="catalog__content catalog__content_active">
+            
+        </div>
+    
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script>
+        $(document).ready(function() {
+            var menu = loadMenu(menu);
+            makeMenu(menu);
+            $('.catalog__tab').click(handleMenuCategoryClick)
+            setMenuCategory('salads');
+        })
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

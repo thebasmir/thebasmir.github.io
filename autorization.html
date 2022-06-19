@@ -1,0 +1,169 @@
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Form</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+		<div class="form">
+		<h1>регистрация</h1>
+			<div class="input-form">
+				<input id="username" type="text" placeholder="Логин">
+			</div>
+			<div class="input-form">
+				<input id="eml" type="email" placeholder="Почта">
+			</div>
+			<div class="input-form">
+				<input id="pswrd" type="password" placeholder="Пароль">
+			</div>
+			<div class="input-form">
+				<button id="submitData" class="button button_submit">зарегистрироваться</button>
+			</div>
+			<a href="#" class="forget">Забыли пароль?</a>
+		</div>
+		
+		<div class="ss_form">
+				<div class="ss_form_descr" style="margin-left: 35%; margin-bottom: 25px; font-size: 18px;">Есть аккаунт?</div>
+				<input id="login" name="name" required placeholder="Ваш Email" type="text"> 
+				<input id="pasword" name="password" required placeholder="Ваш пароль" type="password"> 
+				<button id="submitLogin" class="button button_submit">ВОЙТИ</button>
+		</div>	
+
+		        <!-- <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="password" required placeholder="Ваш пароль" type="password"> 
+                <input name="email" required placeholder="Ваш E-mail" type="email"> 
+
+                <button class="button button_submit">Отправить</button>
+            </form>
+            <div class="autorization">
+            <h2 class="title title_left">
+                Есть аккаунт?<br>
+            </h2>
+            <div class="consultation__descr">
+                Войдите в свой аккаунт<br> 
+                и получите скидку до 20%
+            </div>
+            <form id="consultation-form" class="feed-form" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text"> 
+                <input name="password" required placeholder="Ваш пароль" type="password"> 
+                <button class="button button_submit">ВОЙТИ</button>
+            </form>
+            </div> -->
+</body>
+
+
+<script type="module">
+	// Import the functions you need from the SDKs you need
+	import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-app.js";
+	import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-auth.js";
+	import { getDatabase,set,ref, update } from "https://www.gstatic.com/firebasejs/9.8.2/firebase-database.js";
+
+
+	// TODO: Add SDKs for Firebase products that you want to use
+	// https://firebase.google.com/docs/web/setup#available-libraries
+  
+	// Your web app's Firebase configuration
+	const firebaseConfig = {
+	  apiKey: "AIzaSyDBaQ46vPd_M6DCrZFAULhhc_m0Hi-OaD4",
+	  authDomain: "restuarant-authentication.firebaseapp.com",
+	  projectId: "restuarant-authentication",
+	  storageBucket: "restuarant-authentication.appspot.com",
+	  messagingSenderId: "388538197463",
+	  appId: "1:388538197463:web:0ac594514efa1fa33b5792"
+	};
+  
+	// Initialize Firebase
+	const app = initializeApp(firebaseConfig);
+	const auth = getAuth();
+	const database = getDatabase(app);
+
+
+	submitData.addEventListener('click', (e) => {
+		
+		var email = document.getElementById('eml').value;
+		var password = document.getElementById('pswrd').value;
+
+
+
+			createUserWithEmailAndPassword(auth, email, password)
+  				.then((userCredential) => {
+    				// Signed in 
+    				const user = userCredential.user;
+					
+					set(ref(database, 'users/' + user.uid), {
+    					email: email,
+    					password: password
+    					
+  					})
+
+					  	.then(() => {
+  							// Data saved successfully!
+							alert('Пользователь успешно создан');
+							// await.createUserWithEmailAndPassword(10);
+							// window.location.replace('https://www.youtube.com/');
+
+						})
+						.catch((error) => {
+  							// The write failed...
+							alert(error);
+						});
+
+						
+    				// ...
+  			})
+  				.catch((error) => {
+    				const errorCode = error.code;
+    				const errorMessage = error.message;
+					alert(errorMessage);
+    			// ..
+  			});
+	
+	
+	});
+
+	submitLogin.addEventListener('click', (e) => {
+		
+		var email = document.getElementById('login').value;
+		var password = document.getElementById('pasword').value;		  
+
+			  signInWithEmailAndPassword(auth, email, password)
+  				.then((userCredential) => {
+    				// Signed in 
+   						const user = userCredential.user;
+
+						var lgDate = new Date();   
+						update(ref(database, 'users/' + user.uid), {
+    						last_login: lgDate
+    						    					
+  						})
+
+								.then(() => {
+  								// Data saved successfully!
+									alert('Вы успешно вошли в систему!');
+								})
+								.catch((error) => {
+  									// The write failed...
+									alert(error);
+								});
+
+   							
+
+  				})
+  				.catch((error) => {
+    				const errorCode = error.code;
+    				const errorMessage = error.message;
+					alert(errorMessage);
+  				});  
+
+
+	});
+
+
+  </script>
+	
+
+</html>

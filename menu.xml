@@ -1,0 +1,312 @@
+<menu>
+    <dish category="salads">
+        <name>Салат с тунцом и огурцом</name>
+        <image>img/salat1.png</image>
+        <description>Необычное и вкусное сочетание кукурузы и соленых огурчиков.</description>
+        <ingredients>
+            <ingredient>250 гр. кукурузы</ingredient>
+            <ingredient>2 яйца</ingredient>
+            <ingredient>100 гр. солёных огурцов</ingredient>
+            <ingredient>80 гр. лолобионда</ingredient>
+            <ingredient>укроп и луковица</ingredient>
+            <ingredient>150 гр. помидор</ingredient>
+            <ingredient>соль перец</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>990 руб.</oldPrice>
+            <newPrice>641 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="salads">
+        <name>Греческий салат</name>
+        <image>img/salat2.jpg</image>
+        <description>Абсолютно новый вкус греческого салата.</description>
+        <ingredients>
+            <ingredient>Помидор — 1 шт.</ingredient>
+            <ingredient>Сладкий перец — 1 шт.</ingredient>
+            <ingredient>Лук — 1 шт.</ingredient>
+            <ingredient>Сыр Фета — 80 грамм</ingredient>
+            <ingredient>Оливковое масло, соль, перец по вкусу</ingredient>
+            <ingredient>Чеснок — несколько зубчиков</ingredient>
+            <ingredient>Яблочный уксус по вкусу</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>590 руб.</oldPrice>
+            <newPrice>521 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="salads">
+        <name>Цезарь</name>
+        <image>img/salat3.jpg</image>
+        <description>Всеми любимый салат "Цезарь". Весь вкус - в оригинальном соусе</description>
+        <ingredients>
+            <ingredient>Куриное филе 400 г.</ingredient>
+            <ingredient>Салат Айсберг 1 кочан</ingredient>
+            <ingredient>Помидоры Черри 200 г.</ingredient>
+            <ingredient>Сыр пармезан 100 г.</ingredient>
+            <ingredient>Хлеб белый 1/2 буханки</ingredient>
+            <ingredient>Чеснок — несколько зубчиков</ingredient>
+            <ingredient>Оливковое масло 3 ст. ложки</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>750 руб.</oldPrice>
+            <newPrice>500 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="salads">
+        <name>Испанский салат</name>
+        <image>img/salat4.jpg</image>
+        <description>Блюдо понравится всем любителям правильного питания.</description>
+        <ingredients>
+            <ingredient>Тунец  — 80 Грамм (в масле)</ingredient>
+            <ingredient>Листья салата  — 30 Грамм</ingredient>
+            <ingredient>Помидоры черри  — 60 Грамм</ingredient>
+            <ingredient>Огурцы  — 70 Грамм (свежие)</ingredient>
+            <ingredient>Кукуруза  — 60 Грамм (консервированная)</ingredient>
+            <ingredient>Куриные яйца  — 1 Штука</ingredient>
+            <ingredient>Масло оливковое  — 2 Ст. ложки</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>990 руб.</oldPrice>
+            <newPrice>641 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="salads">
+        <name>Теплый салат</name>
+        <image>img/salat5.jpg</image>
+        <description>Отлично пойдет как сытный гарнир или как основное блюдо.</description>
+        <ingredients>
+            <ingredient>Макароны 250гр</ingredient>
+            <ingredient>Стручковая фасоль 1 горсть</ingredient>
+            <ingredient>Помидоры черри  — 250 Грамм</ingredient>
+            <ingredient>Перец болгарский 2шт</ingredient>
+            <ingredient>Сыр чеддер 50гр</ingredient>
+            <ingredient>Чеснок 3 зубчика</ingredient>
+            <ingredient>Сметана 3ст ложки</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>750 руб.</oldPrice>
+            <newPrice>500 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="salads">
+        <name>Салат с гребешками</name>
+        <image>img/salat6.jpg</image>
+        <description>Для любителей гребешка и закусывания вина.</description>
+        <ingredients>
+            <ingredient>салат айсберг 75 г</ingredient>
+            <ingredient>гребешки 125 г</ingredient>
+            <ingredient>помидоры черри 50 г</ingredient>
+            <ingredient>сыр моцарелла 50 г</ingredient>
+            <ingredient>уксус бальзамический 1 ст.л.</ingredient>
+            <ingredient>оливковое масло и соус табаско по 2гр</ingredient>
+            <ingredient>чеснок 1 зуб.</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>660 руб.</oldPrice>
+            <newPrice>551 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Рыбное ассорти</name>
+        <image>img/rybnoe.jpg</image>
+        <description>Свежо нарезанные рыбы вас ждут, чтобы вы накормились ими.</description>
+        <ingredients>
+            <ingredient>250 г. лосося</ingredient>
+            <ingredient>100 г. красной икры</ingredient>
+            <ingredient>300 г. форели</ingredient>
+            <ingredient>100 г. осетрины</ingredient>
+            <ingredient>100 г. угря</ingredient>
+            <ingredient>лимон</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>990 руб.</oldPrice>
+            <newPrice>701 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Сырное ассорти</name>
+        <image>img/syrnoe.jpg</image>
+        <description>Шесть видов сыров, подобранные в верной последовательности.</description>
+        <ingredients>
+            <ingredient>125гр Качотта из коровьего молока</ingredient>
+            <ingredient>125гр Качотта из козьего молока</ingredient>
+            <ingredient>125гр Твердый сыр Тет де Муан</ingredient>
+            <ingredient>125гр Экстра-твердый сыр Пармезан Швейцарский</ingredient>
+            <ingredient>125гр Сыр с белой плесенью Камамбер</ingredient>
+            <ingredient>Голубой сыр Грандблю Creamy</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>1390 руб.</oldPrice>
+            <newPrice>900 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Разносол</name>
+        <image>img/raznosol.jpg</image>
+        <description>Ассорти солений мы советуем употреблять вместе с нашим</description>
+        <ingredients>
+            <ingredient>150гр баклажан соленый</ingredient>
+            <ingredient>100гр перец острый</ingredient>
+            <ingredient>150гр гурийская капуста</ingredient>
+            <ingredient>150гр помидоры соленые</ingredient>
+            <ingredient>150гр огурцы соленые</ingredient>
+            <ingredient>50гр алыча</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>750 руб.</oldPrice>
+            <newPrice>500 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Кольца кальмара</name>
+        <image>img/kolca.jpg</image>
+        <description>Вы обязательно должны попробовать наши кольца кальмара</description>
+        <ingredients>
+            <ingredient>300гр кальмар</ingredient>
+            <ingredient>80гр мука темпура</ingredient>
+            <ingredient>20мл масло оливковое</ingredient>
+            <ingredient>50гр лук фри</ingredient>
+            <ingredient>долька лимона</ingredient>
+            <ingredient>долька лимона</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>490 руб.</oldPrice>
+            <newPrice>341 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Сырные палочки</name>
+        <image>img/kolca.jpg</image>
+        <description>Наши сырные палочки-волшебные палочки</description>
+        <ingredients>
+            <ingredient>200гр сыр гауда</ingredient>
+            <ingredient>80гр мука темпура</ingredient>
+            <ingredient>20мл масло оливковое</ingredient>
+            <ingredient>40мл соус кисло-сладкий</ingredient>
+            <ingredient>долька лимона</ingredient>
+            <ingredient>долька лимона</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>450 руб.</oldPrice>
+            <newPrice>300 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="snacks">
+        <name>Наши суши</name>
+        <image>img/susi.jpg</image>
+        <description>Идеальный вкус японской кухни только у нас</description>
+        <ingredients>
+            <ingredient>25гр Лосось</ingredient>
+            <ingredient>25гр угорь</ingredient>
+            <ingredient>200гр риса</ingredient>
+            <ingredient>50гр японский сыр</ingredient>
+            <ingredient>20гр огурцы</ingredient>
+            <ingredient>20гр васаби, имбирь и соевый</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>490 руб.</oldPrice>
+            <newPrice>321 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Казан кебаб</name>
+        <image>img/kazan.jpg</image>
+        <description>Горячий прямо из казана бараний кебаб спешит к вам</description>
+        <ingredients>
+            <ingredient>500гр корейка баранины</ingredient>
+            <ingredient>250гр картофель</ingredient>
+            <ingredient>100гр салат айсберг</ingredient>
+            <ingredient>150гр сладкий перец</ingredient>
+            <ingredient>50гр лук</ingredient>
+            <ingredient>50гр помидоры</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>6990 руб.</oldPrice>
+            <newPrice>541 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Уйгурский лагман</name>
+        <image>img/uygur.jpg</image>
+        <description>Король всех видов лагмана без спора уйгурский</description>
+        <ingredients>
+            <ingredient>200гр мясо</ingredient>
+            <ingredient>100гр лук</ingredient>
+            <ingredient>100гр помидора</ingredient>
+            <ingredient>100гр пекинская капуста</ingredient>
+            <ingredient>100гр сладкого перца</ingredient>
+            <ingredient>125гр тесто лагмана</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>490 руб.</oldPrice>
+            <newPrice>400 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Плов узбекский</name>
+        <image>img/plov.jpg</image>
+        <description>Наш плов вам даст атмосферу Узбекистана</description>
+        <ingredients>
+            <ingredient>1кг риса</ingredient>
+            <ingredient>650гр мясо</ingredient>
+            <ingredient>350гр морковь</ingredient>
+            <ingredient>300гр лук</ingredient>
+            <ingredient>250мл масло растительное</ingredient>
+            <ingredient>зира, соль, чеснок, куркума и перец</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>750 руб.</oldPrice>
+            <newPrice>500 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Паста путтанеска</name>
+        <image>img/pasta.jpg</image>
+        <description>Поверьте, вкус нашей пасты прямо из Италии.</description>
+        <ingredients>
+            <ingredient>Спагетти: 300г.</ingredient>
+            <ingredient>Тунец консервированный: 200г.</ingredient>
+            <ingredient>Томаты черри: 100г.</ingredient>
+            <ingredient>Базилик свежий или петрушка: 1 пучок</ingredient>
+            <ingredient>Маслины (черные оливки): 100г.</ingredient>
+            <ingredient>Перец чили: 1 маленькая штука</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>490 руб.</oldPrice>
+            <newPrice>341 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Бешбармак</name>
+        <image>img/beshbarmak.jpeg</image>
+        <description>Свежий бешбармак из мяса конины откроет новый мир вашего желудка.</description>
+        <ingredients>
+            <ingredient>500гр конины</ingredient>
+            <ingredient>1л бульона</ingredient>
+            <ingredient>350гр тесто</ingredient>
+            <ingredient>250гр лук</ingredient>
+            <ingredient>300гр казы</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>490 руб.</oldPrice>
+            <newPrice>341 руб.</newPrice>
+        </prices>
+    </dish>
+    <dish category="second">
+        <name>Борщ</name>
+        <image>img/borsch.jpg</image>
+        <description>Традиционный Борщ. Вкусно как у бабушки.</description>
+        <ingredients>
+            <ingredient>80гр свёкла</ingredient>
+            <ingredient>200гр картофель</ingredient>
+            <ingredient>лук, чеснок и морковь по две штуки</ingredient>
+            <ingredient>петрушка,укроп,белокочанная капуста</ingredient>
+            <ingredient>соль,сахар и подсолнечное масло</ingredient>
+        </ingredients>
+        <prices>
+            <oldPrice>390 руб.</oldPrice>
+            <newPrice>321 руб.</newPrice>
+        </prices>
+    </dish>
+</menu>

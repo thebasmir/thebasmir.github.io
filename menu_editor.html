@@ -1,0 +1,162 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasty Food</title>
+    <link rel="shortcut icon" href="icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            grid-template-rows: 50px 1fr;
+            grid-template-areas: "header header" "items editor";
+            grid-gap: 8px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 4px;
+            background: #333;
+            color: #fc0;
+        }
+        .items__container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            padding: 4px;
+        }
+        .item {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 8px;
+            border: 1px solid transparent;
+            padding: 4px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .item:hover {
+            border: 1px solid black;
+        }
+        .item > .item__header {
+            flex-grow: 1;
+        }
+        .editor {
+            padding: 16px;
+        }
+        .editor__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        .editor-row {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 8px;
+        }
+        .editor-row > label {
+            display: block;
+            text-align: right;
+            width: 200px;
+            margin-right: 8px;
+        }
+        .editor-row > *:last-child {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header style="grid-area: header;">
+        <h2>Редактор меню</h2>
+        <a href="./menu.html" style="margin: 4pt; color: white; font-size: 11pt;">в меню</a>
+    </header>
+    <section class="items" style="grid-area: items">
+        <div class="items__container">
+            <div class="item">
+                <div class="item__header">
+                    <div>Борщ</div>
+                </div>
+                <div class="item__controls">
+                    <button>Удалить</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item__header">
+                    <div>Оливье</div>
+                </div>
+                <div class="item__controls">
+                    <button>Удалить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="editor">
+        <div class="editor__container" style="display: none">
+            <h3 class="editor__title">Создание блюда</h3>
+            <div class="editor-row">
+                <label for="category">Категория</label>
+                <select name="category">
+                    <option value="salads">Салаты</option>
+                    <option value="snacks">Закуски</option>
+                    <option value="second">Вторые блюда</option>
+                </select>
+            </div>
+            <div class="editor-row">
+                <label for="name">Название</label>
+                <input type="text" name="name">
+            </div>
+            <div class="editor-row">
+                <label for="image">Фото</label>
+                <input type="text" name="image">
+            </div>
+            <div class="editor-row">
+                <label for="description">Описание</label>
+                <textarea name="description"></textarea>
+            </div>
+            <div class="editor-row">
+                <label for="ingredients">Ингредиенты</label>
+                <textarea name="ingredients"></textarea>
+            </div>
+            <div class="editor-row">
+                <label for="oldPrice">Старая цена</label>
+                <input type="text" name="oldPrice">
+            </div>
+            <div class="editor-row">
+                <label for="newPrice">Новая цена</label>
+                <input type="text" name="newPrice">
+            </div>
+            <div class="editor-row">
+                <label></label>
+                <button id="save-item-button">Сохранить</button>
+            </div>
+        </div>
+        <div class="editor__placeholder">
+            Выберите блюдо в меню слева или создайте новое:
+            <button id="create-item-button">Создать</button>
+        </div>
+    </section>    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/menu_editor.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function() {
+            var menu = loadMenu(menu);
+            makeMenuEditorItems(menu);
+            $('#create-item-button').click(handleItemCreated);
+            $('#save-item-button').click(handleItemSaved);
+        })
+    </script>
+</body>
+</html>
